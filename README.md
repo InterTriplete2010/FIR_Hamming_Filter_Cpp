@@ -19,7 +19,7 @@ Filter the data: the method is "std::vector<double> Filter_Data(std::vector<std:
 
 If you are running the code in Linux (Ubuntu 18.04), compile the code in the following way: 
   
-  1) g++ -c FIR_Hamming_Filter_H.cpp (to generate FIR_Hamming_Filter.o)
-  2) g++ -ggdb FIR_Hamming_Filter.cpp FIR_Hamming_Filter.o -o <Name_Exe_File>  
+  1) g++ -c FIR_Hamming_Filter_H.cpp (to generate FIR_Hamming_Filter_H.o)
+  2) g++ -ggdb FIR_Hamming_Filter.cpp FIR_Hamming_Filter_H.o -o <Name_Exe_File>  
   
 If you have any question and/or want to report bugs, please e-mail me (Ale) at: pressalex@hotmail.com
