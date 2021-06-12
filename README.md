@@ -17,7 +17,7 @@ High-pass: the function is "std::vector<std::vector<double> > Fir_HP(int, double
 
 Filter the data: the method is "std::vector<double> Filter_Data(std::vector<std::vector<double> > coeff_filt, std::vector<double> pre_filt_signal)". The two arguments are the filter coefficients and the signal to be filtered. It returns the filtered signal.
 
-If you are running the code in Linux (Ubuntu 18.04), compile the code in the following way: 
+If you are running the code in Linux (Ubuntu 20.04), compile the code in the following way: 
   
   1) g++ -c FIR_Hamming_Filter_H.cpp (to generate FIR_Hamming_Filter_H.o)
   2) g++ -ggdb FIR_Hamming_Filter.cpp FIR_Hamming_Filter_H.o -o <Name_Exe_File>  
