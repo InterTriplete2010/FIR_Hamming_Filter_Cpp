@@ -1,7 +1,7 @@
 # FIR_Hamming_Filter_Cpp
 FIR filter based on a Hamming window
 
-C# Library to calculate the coefficients of a FIR filter with Hamming window and to filter the data
+C++ code to calculate the coefficients of a FIR filter with Hamming window and to filter the data
 
 This code calculates the coefficients of the Band-pass, Band-stop, Low-pass and High-pass FIR filters. The file FIR_Hamming_Filter.cpp can be used to test the code. It also filters the data, but no zero-phase delay is applied. The namespace is: FIR_H_F. The code follows the same steps as in Matlab.
 
