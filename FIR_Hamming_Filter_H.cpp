@@ -744,6 +744,7 @@ std::vector<std::vector<double>> FIR_Hamming_Filter::Fir_LP(int filt_order, doub
     //Normalizing the corner frequency with respect to the nyquist frequency
     f1 = f1 / (sf / 2);
 
+    /*
     //Check that the normalized frequencies are within the correct range of values
     if (f1 <= 0 || f1 >= 1)
     {
@@ -759,6 +760,7 @@ std::vector<std::vector<double>> FIR_Hamming_Filter::Fir_LP(int filt_order, doub
         throw ("The order of the filter must be > 0");
 
     }
+    */
 
     Desired_Freq(f1);
     Desired_MAG(filter_type, nbands);
@@ -802,6 +804,7 @@ std::vector<std::vector<double>> FIR_Hamming_Filter::Fir_HP(int filt_order, doub
     //Normalizing the corner frequency with respect to the nyquist frequency
     f1 = f1 / (sf / 2);
 
+    /*
     //Check that the normalized frequencies are within the correct range of values
     if (f1 <= 0 || f1 >= 1)
     {
@@ -817,6 +820,7 @@ std::vector<std::vector<double>> FIR_Hamming_Filter::Fir_HP(int filt_order, doub
         throw ("The order of the filter must be > 0");
 
     }
+    */
 
     Desired_Freq(f1);
     Desired_MAG(filter_type, nbands);
@@ -852,6 +856,7 @@ std::vector<std::vector<double>> FIR_Hamming_Filter::Fir_BP(int filt_order, doub
     f1 = f1 / (sf / 2);
     f2 = f2 / (sf / 2);
 
+    /*
     //Check that the normalized frequencies are within the correct range of values
     if (f1 <= 0 || f1 >= 1 || f2 <= 0 || f2 >= 1)
     {
@@ -875,6 +880,7 @@ std::vector<std::vector<double>> FIR_Hamming_Filter::Fir_BP(int filt_order, doub
         throw ("The order of the filter must be > 0");
 
     }
+    */
 
     Desired_Freq(f1, f2);
     Desired_MAG(filter_type, nbands);
@@ -919,6 +925,7 @@ std::vector<std::vector<double>> FIR_Hamming_Filter::Fir_BS(int filt_order, doub
     f1 = f1 / (sf / 2);
     f2 = f2 / (sf / 2);
 
+    /*
     //Check that the normalized frequencies are within the correct range of values
     if (f1 <= 0 || f1 >= 1 || f2 <= 0 || f2 >= 1)
     {
@@ -942,6 +949,7 @@ std::vector<std::vector<double>> FIR_Hamming_Filter::Fir_BS(int filt_order, doub
         throw ("The order of the filter must be > 0");
 
     }
+    */
 
     Desired_Freq(f1, f2);
     Desired_MAG(filter_type, nbands);
