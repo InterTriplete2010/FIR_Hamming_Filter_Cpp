@@ -655,7 +655,7 @@ void FIR_Hamming_Filter::Scale_Filter()
     }
     
 
-    //Setting the first value of the numerator to "1"
+    //Setting the first value of the denumerator to "1"
     b_filter[1][0] = 1;
 
     if (first_band == 1)
